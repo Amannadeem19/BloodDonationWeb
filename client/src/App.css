@@ -1,0 +1,395 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#home{
+  text-decoration: none;
+}
+#video{
+  width: 100%;
+  height: 100vh;
+ 
+
+}
+video{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  top: 0;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  color: black;
+  font-size: 30px;
+}
+label{
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.post {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  border: 1px solid lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.post:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.post .title {
+  flex: 20%;
+  border-bottom: 1px solid lightgray;
+  background-color: rgb(253, 25, 25);
+  display: grid;
+  place-content: center;
+  color: white;
+}
+
+.post .body {
+  flex: 60%;
+  display: grid;
+  place-content: center;
+}
+
+.post .footer {
+  flex: 20%;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background-color: rgb(253, 25, 25);;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* CREATE POST PAGE CSS */
+
+.createPostPage {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: '500px';
+  
+}
+.createPostPage2 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.header{
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: rgb(219, 112, 98);
+  padding: 20px;
+  text-align: center;
+
+
+
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+
+  border-radius: 5px;
+
+}
+.formContainer2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  /* border: 5px solid grey; */
+  border-radius: 5px;
+  margin-top: 500px;
+}
+.formContainer #inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+  box-shadow:20px;
+}
+.formContainer2 #inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+  box-shadow:20px;
+}
+
+#inputCreatePost1{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+  width: 480px;
+  height: 150px;
+}
+.formContainer button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background-color: rgb(219, 112, 98);
+  border-radius: 5px;
+  color: white;
+ 
+}
+
+.formContainer button:hover {
+  cursor: pointer;
+  color: black;
+ 
+  border: 5px solid white;
+}
+
+.formContainer2 button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background-color: rgb(253, 25, 25);
+  border-radius: 5px;
+  color: white;
+}
+
+.formContainer2 button:hover {
+  cursor: pointer;
+  color: black;
+
+  border: 5px solid white;
+
+}
+#head{
+  border: 3px solid red;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+}
+span {
+  color: red;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  margin-left: 20px;
+  /* text-decoration: none; */
+  color: white;
+}
+
+/* INDIVIDUAL POST */
+.postPage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.leftSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+.rightSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#individual {
+  height: 500px;
+  width: 600px;
+}
+
+#individual .title,
+#individual .footer {
+  font-size: 30px;
+}
+
+#individual .body {
+  font-size: 25px;
+}
+
+/* LOGIN */
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin-top: -100px;
+ 
+}
+.labels{
+  margin-top: 20px;
+}
+
+.loginContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.loginContainer button {
+  background-color: rgb(219, 112, 98);
+  color: black;
+}
+
+.loginContainer input {
+  border: 2px solid rgb(219, 112, 98);
+}
+
+#heading{
+  font-size: 30px;
+  font-family:  'New Century Schoolbook, TeX Gyre Schola, serif'
+}
+
+#auth{
+  color: rgb(136, 0, 0);
+  margin-top: 30px;
+  background-color: antiquewhite;
+  font-size: 20px;
+  font-weight: bold;
+
+
+}
+#error{
+  color: red;
+}
+.requests{
+ 
+  padding: 20px;
+  margin-top: 30px;
+  background-color:crimson;
+  color: white;
+
+
+}
+
+#reqid{
+
+ margin-left: 100px; 
+}
+#btn-del, #btn-update{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  width: 100px;
+
+}
+#btn-del:hover, #btn-update:hover{
+  border: 2px solid grey;
+}
+.main{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: row;
+  /* justify-content: center; */
+
+ 
+  
+}
+#report-head{
+  margin-right: 100px;
+}
+.main2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+#main1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+#reqbtn{
+  /* background-color:  rgb(255, 110, 110); */
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-left: 30px;
+  border: solid black;
+}
+#reqbtn:hover{
+  background-color: rgb(177, 175, 175);
+}
+
+#success{
+
+  border: 2px solid white;
+  background-color: antiquewhite;
+  color:green;
+  font-size: 20px;
+  font-weight: bold;
+}
